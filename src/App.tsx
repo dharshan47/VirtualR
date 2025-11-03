@@ -6,10 +6,12 @@ import Pricing from "./components/Pricing";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+       <Analytics />
       <div className="min-h-screen w-full flex flex-col">
       <Navbar />
       <Hero />
